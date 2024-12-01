@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <!-- Lien vers la dernière version de Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Style de la section principale avec image de fond */
+        .hero-section {
+            background: url('image_cabinet.jpg') no-repeat center center/cover;
+            padding: 100px 0;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: rgb(16, 10, 125);
+        }
+
+        .hero-section p {
+            font-size: 1.25rem;
+            color: rgb(16, 10, 125);
+        }
+
+        .btn-primary {
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+        }
+
+        /* Style pour la barre de navigation */
+        .navbar {
+            margin-bottom: 30px;
+        }
+
+        .navbar a {
+            color: white !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- En-tête avec barre de navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Gestion des Dossiers Médicaux</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#accueil">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#a-propos">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.php">Se Connecter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ajouter_utilisateur.php">Ajouter un utilisateur</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Section principale de l'accueil -->
+        <section id="accueil" class="hero-section">
+            <h1>Bienvenue sur le Système de Gestion des Dossiers Médicaux</h1>
+            <p>Une solution numérique simple et sécurisée pour gérer les informations des patients.</p>
+
+        </section>
+
+        <!-- Informations supplémentaires -->
+        <section id="a-propos" class="text-center mt-5">
+            <h2>À propos du système</h2>
+            <p>
+                Ce système permet de gérer efficacement les dossiers médicaux des patients en toute sécurité.
+                Il est conçu pour faciliter l'enregistrement, la mise à jour, et la consultation des informations
+                médicales tout en garantissant la confidentialité des données.
+            </p>
+        </section>
+
+        <footer class="text-center mt-5">
+            <p> &copy; 2025 Gestion des Dossiers Médicaux</p>
+            <p>&copy; SABND</p>
+        </footer>
+    </div>
+
+    <!-- Script Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
